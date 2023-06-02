@@ -121,23 +121,6 @@ h3,
   font-weight: var(--fw-200);
 }
 
-@media (min-width: 40rem) {
-  h3,
-  .med-text {
-    font-size: var(--fs-600);
-  }
-  
-  h2, 
-  .lrg-text, 
-  .subtitle {
-    font-size: var(--fs-900);
-  }
-
-  h1 {
-    font-size: 4.25rem;
-  }
-}
-
 /* Padding & Margins */
 
 .content {
@@ -147,7 +130,7 @@ h3,
 }
 
 h2 {
-  padding-top: 2.5rem;
+  padding-top: 1.5em;
 }
 
 .subtitle {
@@ -159,8 +142,12 @@ h3,
   padding-bottom: 1rem;
 }
 
-h1, .about__text {
-  padding-bottom: 2.5rem;
+h1 {
+  padding-bottom: 1em;
+}
+
+.about__text {
+  padding-bottom: 2em;
 }
 
 .hero__content {
@@ -168,9 +155,8 @@ h1, .about__text {
   padding-bottom: 1.5rem;
 }
 
-.hero__text, 
-.email {
-  margin-bottom: 1.5rem;
+.hero__text {
+  margin-bottom: 2.5rem;
 }
 
 /* General Styling */
@@ -198,16 +184,16 @@ a {
   bottom: 10px;
 }
 
-@media (min-width: 40rem){
-  .header-main {
-
-  }
-  
-}
-
 .recent-articles__container {
   background-color: var(--clr-primary-300);
   border-radius: 10px;
+  padding-bottom: 1rem;
+}
+
+.three-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .card img {
@@ -232,6 +218,12 @@ a {
   height: 304px;
 }
 
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 form div {
   display: flex;
   flex-direction: column;
@@ -250,7 +242,8 @@ input {
  height: 1px;
  background-color: white;
  border-color: white;
- margin-bottom: 2.5rem;
+ margin: 0 1rem 3rem 1rem;
+
 }
 
 .main-footer__content {
@@ -264,7 +257,7 @@ input {
 .resources {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 li {
@@ -285,5 +278,57 @@ ul {
   padding-bottom: 2.5rem;
 }
 
+@media (min-width: 40rem){ 
+  /* typography */
+
+  h3,
+  .med-text {
+    font-size: var(--fs-600);
+  }
+  
+  h2, 
+  .lrg-text, 
+  .subtitle {
+    font-size: var(--fs-900);
+  }
+
+  h1 {
+    font-size: 4.25rem;
+  }
+
+/* general styling */
+
+.header-main {
+  width: 100%;
+}
+
+  h2 {
+    padding-top: 2.5em;
+  }
+
+  .header-main {
+
+  }
+
+  .three-col {
+    flex-direction: row;
+    padding-bottom: 5rem;
+  }
+  .card {
+    flex: 1;
+  }
+
+  .cta__img {
+    width: 100%;
+  }
+
+  .subscribe {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+  }
+}
 
 
+ 
