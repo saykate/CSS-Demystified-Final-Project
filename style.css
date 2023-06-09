@@ -233,18 +233,18 @@ a {
 }
 
 .page-home .header-main {
-  background-image: url(/img/hero.jpg);
+  background-image: url(./img/hero.jpg);
   background-position: center center;  
 }
 
 .page-blog .header-main {
-  background-image: url(/img/blog.jpg);
+  background-image: url(./img/blog.jpg);
   background-position: 40% 75%;
   min-height: 35rem;
 }
 
 .page-article .header-main {
-  background-image: url(/img/article.jpg);
+  background-image: url(./img/article.jpg);
   min-height: 35rem;
   background-position: right;
 }
