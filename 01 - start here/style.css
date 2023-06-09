@@ -13,7 +13,7 @@ html, body {
     }
     
 body {
-    line-height: 1.2;
+    line-height: 1.75;
     -webkit-font-smoothing: antialiased;
     }
     
@@ -137,6 +137,10 @@ h2 {
   padding-bottom: 5rem;
 }
 
+.page-article .subtitle {
+  padding-bottom: 1.5rem;
+}
+
 h3,
 .card p {
   padding-bottom: 1rem;
@@ -149,10 +153,22 @@ h1 {
 .about__text {
   padding-bottom: 2em;
 }
+.top-stories {
+  padding-bottom: 3rem;
+}
+
+.part2 {
+  padding-top: 0;
+}
 
 .hero__content {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.page-article .hero__content {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .hero__text {
@@ -167,6 +183,7 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--clr-neutral-900);
 }
 
 .header-main__nav a {
@@ -178,9 +195,19 @@ a {
   color: var(--clr-neutral-900);
 }
 
+.btn-back {
+  display: none;
+}
+
 .btn::after {
   content: "\203A";
   margin-left: 1em;
+  font-weight: var(--fw-300);
+}
+
+.btn-back::before {
+  content: "\003C";
+  margin-right: 1em;
   font-weight: var(--fw-300);
 }
 
@@ -189,12 +216,17 @@ a {
   color: var(--clr-primary-400);
 }
 
+.btn-back:hover, 
+.btn-back:focus {
+  color: var(--clr-neutral-400);
+}
+
 .header-main {
   background-color: var(--clr-primary-400);
   background-size: cover;
   border-radius: 10px;
   min-height: 19rem;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -208,6 +240,12 @@ a {
   background-image: url(/01\ -\ start\ here/img/blog.jpg);
   background-position: 40% 75%;
   min-height: 35rem;
+}
+
+.page-article .header-main {
+  background-image: url(/01\ -\ start\ here/img/article.jpg);
+  min-height: 35rem;
+  background-position: right;
 }
 
 .header-main__text {
@@ -242,7 +280,8 @@ a {
   padding-bottom: 1rem;
 }
 
-.page-blog .recent-articles__container {
+.page-blog .recent-articles__container,
+.page-article .recent-articles__container {
   background-color: var(--clr-neutral-100);
 }
 
@@ -266,6 +305,17 @@ a {
   height: 12.5rem;
   width: 100%;
   margin-bottom: 1rem;
+}
+
+.img-tall {
+  object-fit: cover;
+  height: 17rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card-tall {
+  padding-bottom: 2.5rem;
 }
 
 .date-time {
@@ -412,7 +462,21 @@ ul {
 
 .header-main__text {
   max-width: 50%;
-  padding-left: 3em;
+  padding-left: 6em;
+}
+
+.img-tall {
+  height: 40rem;
+}
+
+.btn-back {
+  color: var(--clr-neutral-900);
+  display: block;
+}
+
+.article-container {
+  max-width: 40rem;
+  margin: 0 auto;
 }
 
 .blog-nav__content {
@@ -433,6 +497,12 @@ ul {
   gap: 1rem;
   font-size: var(--fs-200);
   font-weight: var(--fw-400);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 6em;
 }
 
   h2 {
