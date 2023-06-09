@@ -13,7 +13,7 @@ html, body {
     }
     
 body {
-    line-height: 1.75;
+    line-height: 1.2;
     -webkit-font-smoothing: antialiased;
     }
     
@@ -121,6 +121,10 @@ h3,
   font-weight: var(--fw-200);
 }
 
+.page-article .about__text {
+  line-height: 1.5;
+}
+
 /* Padding & Margins */
 
 .content {
@@ -137,7 +141,7 @@ h2 {
   padding-bottom: 5rem;
 }
 
-.page-article .subtitle {
+.subtitle2 {
   padding-bottom: 1.5rem;
 }
 
@@ -152,9 +156,6 @@ h1 {
 
 .about__text {
   padding-bottom: 2em;
-}
-.top-stories {
-  padding-bottom: 3rem;
 }
 
 .part2 {
@@ -300,6 +301,14 @@ a {
   padding-bottom: 5rem;
 }
 
+.card:last-of-type {
+  padding-bottom: 1rem;
+}
+
+.page-article .cards-two {
+  padding: 0 1rem 2rem 1rem;
+}
+
 .card img {
   object-fit: cover;
   height: 12.5rem;
@@ -325,6 +334,10 @@ a {
 
 .stories {
   text-align: center;
+}
+
+.article-cards {
+ padding: 0 15rem;
 }
 
 .cta__content {
@@ -438,6 +451,7 @@ ul {
 /* general styling */
 .header-main {
   width: 100%;
+  min-height: 30rem;
 }
 
 .page-blog .header-main {
@@ -462,7 +476,7 @@ ul {
 
 .header-main__text {
   max-width: 50%;
-  padding-left: 6em;
+  padding-left: 10em;
 }
 
 .img-tall {
@@ -515,11 +529,12 @@ ul {
 
   .three-col {
     flex-direction: row;
-    padding-bottom: 2.5rem;
+    gap: 2.5rem;
   }
 
   .card {
     flex: 1;
+    padding-bottom: 1rem;
   }
 
   .card-one {
@@ -528,7 +543,8 @@ ul {
   }
 
   .card-one img {
-    height: 100%;
+    min-height: 18rem;
+    width: 100%;
   }
 
   .flex-item {
